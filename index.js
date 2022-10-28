@@ -13,8 +13,12 @@ if (!town) {
   answerTown = "";
   alert("Шкода, що Ви не захотіли ввести місто...");
 } else {
-  if (town === "Київ" || town === "Вашингтон" || town === "Лондон") {
-    answerTown = `Ви жевете у столиці ${town}.`;
+  if (town === "Київ") {
+    answerTown = `Ви жевете у столиці України - ${town}.`;
+  } else if (town === "Вашингтон") {
+    answerTown = `Ви жевете у столиці CША - ${town}.`;
+  } else if (town === "Лондон") {
+    answerTown = `Ви жевете у столиці Иеликобританії - ${town}.`;
   } else {
     answerTown = `Ви жевете у місті ${town}.`;
   }
